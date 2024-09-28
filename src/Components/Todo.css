@@ -1,0 +1,156 @@
+/* Body styling for general layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: linear-gradient(135deg, #6dd5ed 0%, #2193b0 100%); */
+    background-color: lightgrey;
+}
+
+/* Main container for the app */
+.todo-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Heading of the ToDo App */
+.todo-heading {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Input field for adding new tasks */
+.todo-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.todo-input:focus {
+    border-color: #2193b0;
+    outline: none;
+}
+
+/* Add button */
+.todo-add-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.todo-add-btn:hover {
+    background-color: #218838;
+}
+
+/* List styling */
+.todo-list {
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+}
+
+/* Each ToDo item */
+.todo-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Task text */
+.todo-text {
+    font-size: 18px;
+    color: #333;
+    flex-grow: 1;
+    padding-right: 10px;
+}
+
+/* Button styles inside each item */
+.todo-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Delete button */
+.todo-delete {
+    background-color: #ff5252;
+}
+
+.todo-delete:hover {
+    background-color: #e53935;
+}
+
+/* Move up button */
+.todo-up {
+    background-color: #5bc0de;
+}
+
+.todo-up:hover {
+    background-color: #31b0d5;
+}
+
+/* Move down button */
+.todo-down {
+    background-color: #f0ad4e;
+}
+
+.todo-down:hover {
+    background-color: #ec971f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .todo-container {
+        padding: 20px;
+    }
+
+    .todo-heading {
+        font-size: 24px;
+    }
+
+    .todo-input {
+        font-size: 14px;
+    }
+
+    .todo-add-btn {
+        font-size: 14px;
+    }
+
+    .todo-text {
+        font-size: 16px;
+    }
+}
